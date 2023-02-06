@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class metodoFleury {
+  
   String caminho = "";
   Integer camim = 0;
 
@@ -20,11 +21,14 @@ public class metodoFleury {
       quantidadeTotal++;
     }
 
-    if (quantidadeImpar > 2) {
-      return "O grafo é não-eureliano";
-    } else {
-      mostraCaminho(grafo, posicao);
-    }
+    // if (quantidadeImpar > 2) {
+    //   return "O grafo é não-eureliano";
+    // } else {
+    //   mostraCaminho(grafo, posicao);
+    // }
+
+    mostraCaminho(grafo, posicao);
+
     if (camim == grafo.getQuantArestas()) {
       return caminho;
     } else {
